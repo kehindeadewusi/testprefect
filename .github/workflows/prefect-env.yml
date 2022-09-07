@@ -6,7 +6,7 @@ on:
 jobs:
   deploy-prefect-workflows:
     runs-on: ubuntu-latest
-    environment: PREFECT_CLOUD_KEY
+    environment: PREFECT_ENV_KEY
     steps:
       - name: install prefect with databricks dependency
         run: pip install prefect[databricks]==1.3.0
